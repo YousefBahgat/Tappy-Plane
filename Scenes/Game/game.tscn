@@ -3,6 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://bwrnk3l1b43gc" path="res://assets/background/Parallax0.png" id="1_mv0hc"]
 [ext_resource type="PackedScene" uid="uid://3wwtajt2o4vk" path="res://Scenes/Tappy/tappy.tscn" id="2_qxfds"]
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qxfds"]
+normal = Vector2(0, 1)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_4ll5h"]
+
 [node name="Game" type="Node" unique_id=1425501334]
 
 [node name="Parallax0" type="Sprite2D" parent="." unique_id=206683394]
@@ -11,3 +16,13 @@ texture = ExtResource("1_mv0hc")
 
 [node name="Tappy" parent="." unique_id=966178388 instance=ExtResource("2_qxfds")]
 position = Vector2(59, 395)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1279097662]
+
+[node name="ceiling" type="CollisionShape2D" parent="StaticBody2D" unique_id=1176638868]
+position = Vector2(241, -17)
+shape = SubResource("WorldBoundaryShape2D_qxfds")
+
+[node name="floor" type="CollisionShape2D" parent="StaticBody2D" unique_id=2110284775]
+position = Vector2(241, 817)
+shape = SubResource("WorldBoundaryShape2D_4ll5h")

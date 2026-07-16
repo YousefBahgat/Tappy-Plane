@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://3wwtajt2o4vk"]
 
+[ext_resource type="Script" uid="uid://bb2kpwollnyhq" path="res://Scenes/Tappy/tappy.gd" id="1_4qxvu"]
 [ext_resource type="Texture2D" uid="uid://bbsvyv56p82px" path="res://assets/items/frog.png" id="1_p5ejl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4qxvu"]
@@ -350,6 +351,7 @@ animations = [{
 radius = 11.232092
 
 [node name="Tappy" type="CharacterBody2D" unique_id=966178388]
+script = ExtResource("1_4qxvu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2000833335]
 position = Vector2(0, 10)
