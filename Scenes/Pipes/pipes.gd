@@ -1,0 +1,23 @@
+class_name Pipes
+extends Node2D
+
+
+const SCROLL_SPEED: float = 120 
+@onready var visible_on_screen_notifier_2d: VisibleOnScreenNotifier2D = $VisibleOnScreenNotifier2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	visible_on_screen_notifier_2d.connect("screen_exited",_onPipesScreenExit)
+	
+func _physics_process(delta: float) -> void:
+	position.x -= SCROLL_SPEED * delta
+	
+func _onPipesScreenExit():
+	queue_free()
+	
+
+
+func _on_on_screen_exit_saftey_timer_timeout() -> void:
+	queue_free()
+	

@@ -1,4 +1,6 @@
+class_name Tappy
 extends CharacterBody2D
+
 
 # @onready var label: Label = $Label
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
