@@ -21,3 +21,11 @@ func _onPipesScreenExit():
 func _on_on_screen_exit_saftey_timer_timeout() -> void:
 	queue_free()
 	
+
+
+func _on_pipe_body_entered(body: Node2D) -> void:
+	print("_on_pipe_body_entered: Name: %s \t Body entered: %s" %[name,body.name] )
+
+
+func _on_laser_body_entered(body: Node2D) -> void:
+	print("_on_laser_body_entered: Name: %s \t Body entered: %s" %[name,body.name] )

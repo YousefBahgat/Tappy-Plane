@@ -23,6 +23,7 @@ texture = ExtResource("1_mv0hc")
 position = Vector2(119, 281)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1279097662]
+collision_mask = 0
 
 [node name="ceiling" type="CollisionShape2D" parent="StaticBody2D" unique_id=1176638868]
 position = Vector2(241, -17)

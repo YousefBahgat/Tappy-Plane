@@ -414,6 +414,7 @@ _data = {
 }
 
 [node name="Tappy" type="CharacterBody2D" unique_id=966178388]
+collision_layer = 2
 script = ExtResource("1_4qxvu")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2000833335]
