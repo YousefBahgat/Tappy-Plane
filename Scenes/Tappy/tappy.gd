@@ -31,3 +31,8 @@ func _physics_process(delta: float) -> void:
 	#label.text += "is_on_ceiling: %s \n" % is_on_ceiling()
 	#label.text += "is_on_wall: %s " % is_on_wall()
 	
+	if is_on_floor():die()
+	
+
+func die()-> void:
+	get_tree().paused = true
