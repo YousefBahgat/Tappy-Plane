@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Tappy Plane!"
-run/main_scene="uid://ch0cbsx05k47l"
+run/main_scene="uid://dkbkajpsuy6t8"
 config/features=PackedStringArray("4.7", "Mobile")
 config/icon="uid://cdbjulfn0s5wd"
 
