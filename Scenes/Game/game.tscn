@@ -30,7 +30,7 @@ position = Vector2(241, -17)
 shape = SubResource("WorldBoundaryShape2D_qxfds")
 
 [node name="floor" type="CollisionShape2D" parent="StaticBody2D" unique_id=2110284775]
-position = Vector2(241, 817)
+position = Vector2(241, 729)
 shape = SubResource("WorldBoundaryShape2D_4ll5h")
 
 [node name="UpperSpawn" type="Marker2D" parent="." unique_id=1138725562]
