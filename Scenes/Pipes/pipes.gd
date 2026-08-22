@@ -4,6 +4,7 @@ extends Node2D
 
 const SCROLL_SPEED: float = 120 
 @onready var visible_on_screen_notifier_2d: VisibleOnScreenNotifier2D = $VisibleOnScreenNotifier2D
+@onready var scoring_sound: AudioStreamPlayer = $ScoringSound
 
 
 # Called when the node enters the scene tree for the first time.
@@ -29,4 +30,4 @@ func _on_pipe_body_entered(body: Node2D) -> void:
 
 
 func _on_laser_body_entered(body: Node2D) -> void:
-	print("_on_laser_body_entered: Name: %s \t Body entered: %s" %[name,body.name] )
+	scoring_sound.play()

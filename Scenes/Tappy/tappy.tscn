@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bb2kpwollnyhq" path="res://Scenes/Tappy/tappy.gd" id="1_4qxvu"]
 [ext_resource type="Texture2D" uid="uid://bbsvyv56p82px" path="res://assets/items/frog.png" id="1_p5ejl"]
+[ext_resource type="AudioStream" uid="uid://dayjvffh25quv" path="res://assets/audio/engine.mp3" id="3_5nol8"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4qxvu"]
 atlas = ExtResource("1_p5ejl")
@@ -377,6 +378,18 @@ tracks/1/keys = {
 "update": 0,
 "values": [0.0]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Engine:pitch_scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
 
 [sub_resource type="Animation" id="Animation_5nol8"]
 resource_name = "fly"
@@ -405,6 +418,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [0.0, 0.17453292519943295, -0.17453292519943295, 0.17453292519943295, -0.17453292519943295, 0.17453292519943295, -0.17453292519943295, 0.17453292519943295, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Engine:pitch_scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.0, 1.5999999999999999, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_8cv1s"]
@@ -442,3 +467,9 @@ jgdkfjgkdjf"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=179071770]
 libraries/ = SubResource("AnimationLibrary_8cv1s")
+
+[node name="Engine" type="AudioStreamPlayer" parent="." unique_id=1485424811]
+stream = ExtResource("3_5nol8")
+volume_db = -3.0
+autoplay = true
+parameters/looping = true
