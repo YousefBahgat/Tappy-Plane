@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://ch0cbsx05k47l"]
 
-[ext_resource type="Texture2D" uid="uid://bwrnk3l1b43gc" path="res://assets/background/Parallax0.png" id="1_mv0hc"]
 [ext_resource type="Script" uid="uid://1p6n5o3q03s7" path="res://Scenes/Game/game.gd" id="1_qikps"]
 [ext_resource type="PackedScene" uid="uid://3wwtajt2o4vk" path="res://Scenes/Tappy/tappy.tscn" id="2_qxfds"]
+[ext_resource type="PackedScene" uid="uid://dawy8swshyc6m" path="res://Scenes/ScrollingBg/scrolling_bg.tscn" id="3_ciybh"]
 [ext_resource type="PackedScene" uid="uid://okg74sl06u14" path="res://Scenes/Pipes/pipes.tscn" id="3_qikps"]
 [ext_resource type="PackedScene" uid="uid://ct5vmwiwmyrnu" path="res://Scenes/Game_UI/game_ui.tscn" id="5_ciybh"]
 
@@ -15,10 +15,7 @@ normal = Vector2(0, 1)
 script = ExtResource("1_qikps")
 pipes_scene = ExtResource("3_qikps")
 
-[node name="Parallax0" type="Sprite2D" parent="." unique_id=206683394]
-z_index = 10
-position = Vector2(461, 833)
-texture = ExtResource("1_mv0hc")
+[node name="ScrollingBg" parent="." unique_id=153386363 instance=ExtResource("3_ciybh")]
 
 [node name="Tappy" parent="." unique_id=966178388 instance=ExtResource("2_qxfds")]
 position = Vector2(119, 281)
