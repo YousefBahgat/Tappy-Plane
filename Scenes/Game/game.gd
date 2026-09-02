@@ -13,6 +13,8 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	spawn_pipes()
+	# RESET THE SCORE WHENEVER THE GAME START SO U DON'T ADD ON OLD SCORE..
+	ScoreManager.reset_score()
 
 
 func spawn_pipes() -> void:
