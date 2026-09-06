@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://drywitb3uigwp"]
+
+[ext_resource type="Script" uid="uid://brxl1wj055ap6" path="res://Scenes/LoadingScreen/loading_screen.gd" id="1_eapma"]
+[ext_resource type="Texture2D" uid="uid://dacx588m02rar" path="res://assets/background/MainScreen.png" id="1_upe4u"]
+[ext_resource type="LabelSettings" uid="uid://b80k3xr4lakdx" path="res://Resources/press_jump_label.tres" id="2_eapma"]
+
+[node name="LoadingScreen" type="Control" unique_id=1402414481]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eapma")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1636087873]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_upe4u")
+
+[node name="LoadingText" type="Label" parent="." unique_id=1698902514]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.0
+offset_top = -201.0
+offset_right = 159.0
+offset_bottom = -140.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "Loading..."
+label_settings = ExtResource("2_eapma")
+horizontal_alignment = 1
+vertical_alignment = 1

@@ -11,6 +11,7 @@
 [node name="ScrollingBg" type="Node2D" unique_id=153386363]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1660239074]
+self_modulate = Color(0.32172796, 0.32172796, 0.32172796, 1)
 texture = ExtResource("1_v1wmp")
 centered = false
 

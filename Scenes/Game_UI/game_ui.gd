@@ -11,9 +11,12 @@ extends Control
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("return_to_menu"):
-		GameManagerScene.load_main_screen()
+		ComplexChange.load_main_screen()
 	if event.is_action_pressed("fly") and press_jump_label.visible:
-		GameManagerScene.load_main_screen()
+		score_label.hide()
+		game_over_label.hide()
+		ComplexChange.load_main_screen()
+		
 
 
 
