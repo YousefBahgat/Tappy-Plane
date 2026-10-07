@@ -1,6 +1,6 @@
 # ✈️ Tappy Plane
 
-A simple 2D arcade game inspired by the classic **Flappy Bird** gameplay style, built with **Godot 4.x**.
+A simple 2D arcade game inspired by the classic **Flappy Bird** gameplay style, built with **Godot 4.7**.
 
 The player controls a small plane and must keep flying while avoiding incoming pipes. The goal is to survive as long as possible, pass through as many pipe gaps as possible, and achieve the highest score.
 
@@ -507,14 +507,14 @@ This becomes important when deciding how and when scenes and resources should be
 
 ### Requirements
 
-- [Godot 4.x](https://godotengine.org/)
+- [Godot 4.7](https://godotengine.org/)
 
 ### Steps
 
 1. Clone the repository:
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone <https://github.com/YousefBahgat/Tappy-Plane/>
 ```
 
 2. Open the project in Godot.
@@ -604,7 +604,7 @@ The project can also be used as a foundation for adding more gameplay features a
 
 ## 📚 Purpose of the Project
 
-This project was created primarily for **learning and practicing Godot 4.x game development**.
+This project was created primarily for **learning and practicing Godot 4.7 game development**.
 
 It focuses on understanding the underlying concepts behind a small complete game rather than only making the game work.
 
@@ -612,20 +612,14 @@ It focuses on understanding the underlying concepts behind a small complete game
 
 ## 👨‍💻 Author
 
-**Your Name**
+**Eng.Yousef Bahgat**
 
-Built with ❤️ and **Godot 4.x**.
+Built with ❤️ and **Godot 4.7**.
 
 ---
 
 ## 📄 License
 
-Add your preferred license here.
-
-For example:
-
 ```text
 MIT License
 ```
-
-If the repository contains third-party assets, sounds, fonts, or other resources, make sure their licenses allow redistribution before publishing them publicly.
