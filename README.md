@@ -12,7 +12,7 @@ This project started as a learning project and evolved into a complete small gam
 
 The gameplay is simple:
 
-- Tap / click to make the plane fly upward.
+- click to make the plane fly upward.
 - The plane continuously falls due to gravity.
 - Avoid hitting the pipes.
 - Passing a pipe successfully gives you **1 point**.
@@ -27,7 +27,6 @@ The gameplay is simple:
 | Input | Action |
 |---|---|
 | Mouse Click | Fly |
-| Touch | Fly |
 | Keyboard Action | Fly |
 
 The game uses Godot's **Input Map**, so the input action can be configured from:
