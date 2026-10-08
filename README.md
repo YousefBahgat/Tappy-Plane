@@ -8,6 +8,11 @@ This project started as a learning project and evolved into a complete small gam
 
 ---
 
+## Demo Video
+
+[![Demo Video](https://raw.githubusercontent.com/YousefBahgat/Tappy-Plane/master/Demo-Thumbnail.png)](https://drive.google.com/file/d/1tihv_FvUnT97tXwRd0Xa4vNtBuD4EVDl/view?usp=sharing)
+
+---
 ## 🎮 Gameplay
 
 The gameplay is simple:
